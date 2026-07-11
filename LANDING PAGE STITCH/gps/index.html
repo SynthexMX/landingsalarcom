@@ -9,22 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.grupoalarcom.mx/gps">
 <meta property="og:image" content="./hero_bg_chihuahua_v3.png">
-<!-- Meta Pixel Code -->
-<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '{{META_PIXEL_ID}}');
-    fbq('track', 'PageView');
-    fbq('track', 'ViewContent');
-    </script>
-<noscript></noscript>
-<!-- End Meta Pixel Code -->
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -510,7 +495,7 @@
                     <span class="material-symbols-outlined text-brand-amber">search</span>
                     <h3 class="text-title-sm font-title-sm text-on-surface">Evaluación</h3>
                 </div>
-                <p class="text-body-sm font-body-sm text-on-surface-variant">Visitamos tu espacio y analizamos tus flotilla (cajas, tractos, utilitarios).</p>
+                <p class="text-body-sm font-body-sm text-on-surface-variant">Visitamos tu espacio y analizamos tu flotilla (cajas, tractos, utilitarios).</p>
             </div>
             <!-- Paso 2 -->
             <div class="bg-surface p-md rounded-xl text-center border border-outline-variant/20 card-hover">
@@ -603,7 +588,7 @@
                 <span class="material-symbols-outlined text-brand-teal" style="font-variation-settings: 'FILL' 1;">laptop_mac</span>
             </div>
             <h3 class="text-title-sm font-title-sm text-on-surface mb-xs">Diseño a Medida</h3>
-            <p class="text-body-sm font-body-sm text-on-surface-variant">Evaluamos tu espacio, tus flujos de personas y tus necesidades para diseñar un sistema que realmente funcione.</p>
+            <p class="text-body-sm font-body-sm text-on-surface-variant">Evaluamos tus unidades, rutas y necesidades operativas para diseñar un sistema que realmente funcione.</p>
         </div>
         <div class="glass-panel rounded-xl p-md card-hover group reveal reveal-delay-2">
             <div class="w-10 h-10 rounded-full bg-brand-amber/15 flex items-center justify-center mb-sm">
@@ -617,7 +602,7 @@
                 <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">support_agent</span>
             </div>
             <h3 class="text-title-sm font-title-sm text-on-surface mb-xs">Soporte Técnico</h3>
-            <p class="text-body-sm font-body-sm text-on-surface-variant">Ante cualquier falla o duda, nuestro equipo técnico responde rápido. Porque un acceso que no funciona es un acceso abierto.</p>
+            <p class="text-body-sm font-body-sm text-on-surface-variant">Ante cualquier falla o duda, nuestro equipo técnico responde rápido. Porque una unidad sin monitoreo deja tu operación sin visibilidad.</p>
         </div>
     </div>
 </section>
@@ -629,7 +614,7 @@
         <blockquote class="text-body-md md:text-title-sm font-body-md text-on-surface italic mb-4">
             "Nuestro equipo realiza instalaciones seguras y discretas. Te brindamos una plataforma robusta y soporte técnico local continuo para que siempre tengas el control logístico de tus unidades."
         </blockquote>
-        <div class="text-label-caps font-label-caps text-on-surface-variant uppercase tracking-widest">— Especialistas en Rastreo Satelital · Empresa Transporte Públicol en Chihuahua</div>
+        <div class="text-label-caps font-label-caps text-on-surface-variant uppercase tracking-widest">— Especialistas en Rastreo Satelital · Empresa de transporte público en Chihuahua</div>
     </div>
 </section>
 
@@ -641,7 +626,7 @@
         <div class="w-full md:w-5/12 bg-surface-container-highest p-md md:p-lg flex flex-col justify-between">
             <div>
                 <h2 class="text-headline-md font-headline-md text-on-surface mb-sm">Solicita tu cotización <span class="text-gradient-amber">gratuita.</span></h2>
-                <p class="text-body-sm font-body-sm text-on-surface-variant mb-md">Un especialista evaluará tu espacio, te recomendará el sistema ideal y te entregará una cotización detallada. Sin compromiso.</p>
+                <p class="text-body-sm font-body-sm text-on-surface-variant mb-md">Un especialista evaluará tu flotilla y operación, te recomendará el sistema ideal y te entregará una cotización detallada. Sin compromiso.</p>
                 <ul class="space-y-sm mb-lg">
                     <li class="flex items-center gap-xs text-body-sm text-on-surface">
                         <span class="material-symbols-outlined text-brand-teal text-[18px]">check_circle</span>
@@ -700,11 +685,11 @@
                     <div class="flex flex-col gap-1">
                         <label class="text-label-caps font-label-caps text-on-surface-variant uppercase" for="tipo-servicio">Tipo de Servicio</label>
                         <select class="bg-surface-container/50 border border-outline-variant/50 rounded-md p-xs text-body-sm text-on-surface focus:border-brand-teal focus:ring-1 focus:ring-brand-teal outline-none transition-colors" id="tipo-servicio">
-                            <option value="biometrico">Acceso Biométrico</option>
+                            <option value="biometrico">Rastreo GPS</option>
                             <option value="torniquetes">Paro de Motor</option>
-                            <option value="barreras">Barreras Vehiculares</option>
-                            <option value="puertas">Control de Puertas</option>
-                            <option value="estacionamiento">Estacionamiento</option>
+                            <option value="barreras">Telemetría y alertas</option>
+                            <option value="puertas">Geocercas y rutas</option>
+                            <option value="estacionamiento">Plataforma web y app</option>
                             <option value="integral">Proyecto Integral</option>
                             <option value="otro">Otro</option>
                         </select>
@@ -866,7 +851,7 @@
         var scrollDepths = [25, 50, 75, 100];
         var trackedDepths = {};
         window.addEventListener('scroll', function() {
-            var scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            var scrollRange = document.documentElement.scrollHeight - window.innerHeight; var scrollPercent = scrollRange > 0 ? Math.round((window.scrollY / scrollRange) * 100) : 100;
             scrollDepths.forEach(function(depth) {
                 if (scrollPercent >= depth && !trackedDepths[depth]) {
                     trackedDepths[depth] = true;

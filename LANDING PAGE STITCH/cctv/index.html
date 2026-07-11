@@ -9,22 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.grupoalarcom.mx/cctv">
 <meta property="og:image" content="./hero_bg_cctv.jpeg">
-<!-- Meta Pixel Code -->
-<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '{{META_PIXEL_ID}}');
-    fbq('track', 'PageView');
-    fbq('track', 'ViewContent');
-    </script>
-<noscript></noscript>
-<!-- End Meta Pixel Code -->
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -300,7 +285,7 @@
                 </div>
                 <div class="absolute -bottom-4 -left-10 glass-panel rounded-lg px-3 py-2 flex items-center gap-2 animate-bounce" style="animation-duration: 3.5s; animation-delay: 1s;">
                     <span class="material-symbols-outlined text-brand-teal text-sm">phone_iphone</span>
-                    <span class="text-[11px] text-on-surface font-semibold">App Móvil</span>
+                    <span class="text-[11px] text-on-surface font-semibold">Monitoreo remoto</span>
                 </div>
             </div>
         </div>
@@ -366,7 +351,7 @@
                 <span class="material-symbols-outlined text-outline text-2xl">videocam_off</span>
             </div>
             <h3 class="text-title-sm font-title-sm text-on-surface mb-xs">Sistemas Obsoletos</h3>
-            <p class="text-body-sm font-body-sm text-on-surface-variant">Cámaras viejas donde las imágenes son borrosas, los cables fallan constantemente y es imposible distinguir unas placas o un rostro.</p>
+            <p class="text-body-sm font-body-sm text-on-surface-variant">Cámaras viejas donde las imágenes son borrosas, los cables fallan constantemente y es imposible distinguir una placa o un rostro.</p>
         </div>
     </div>
 </section>
@@ -617,7 +602,7 @@
                 <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">support_agent</span>
             </div>
             <h3 class="text-title-sm font-title-sm text-on-surface mb-xs">Soporte Técnico</h3>
-            <p class="text-body-sm font-body-sm text-on-surface-variant">Ante cualquier falla o duda, nuestro equipo técnico responde rápido. Porque un acceso que no funciona es un acceso abierto.</p>
+            <p class="text-body-sm font-body-sm text-on-surface-variant">Ante cualquier falla o duda, nuestro equipo técnico responde rápido. Porque un sistema de vigilancia fuera de servicio deja puntos ciegos.</p>
         </div>
     </div>
 </section>
@@ -700,11 +685,11 @@
                     <div class="flex flex-col gap-1">
                         <label class="text-label-caps font-label-caps text-on-surface-variant uppercase" for="tipo-servicio">Tipo de Servicio</label>
                         <select class="bg-surface-container/50 border border-outline-variant/50 rounded-md p-xs text-body-sm text-on-surface focus:border-brand-teal focus:ring-1 focus:ring-brand-teal outline-none transition-colors" id="tipo-servicio">
-                            <option value="biometrico">Acceso Biométrico</option>
-                            <option value="torniquetes">App Móvil</option>
-                            <option value="barreras">Barreras Vehiculares</option>
-                            <option value="puertas">Control de Puertas</option>
-                            <option value="estacionamiento">Estacionamiento</option>
+                            <option value="biometrico">Cámaras IP</option>
+                            <option value="torniquetes">Monitoreo remoto</option>
+                            <option value="barreras">DVR / NVR</option>
+                            <option value="puertas">Actualización de sistema</option>
+                            <option value="estacionamiento">Videovigilancia perimetral</option>
                             <option value="integral">Proyecto Integral</option>
                             <option value="otro">Otro</option>
                         </select>
@@ -866,7 +851,7 @@
         var scrollDepths = [25, 50, 75, 100];
         var trackedDepths = {};
         window.addEventListener('scroll', function() {
-            var scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            var scrollRange = document.documentElement.scrollHeight - window.innerHeight; var scrollPercent = scrollRange > 0 ? Math.round((window.scrollY / scrollRange) * 100) : 100;
             scrollDepths.forEach(function(depth) {
                 if (scrollPercent >= depth && !trackedDepths[depth]) {
                     trackedDepths[depth] = true;

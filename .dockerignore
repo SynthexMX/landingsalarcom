@@ -1,0 +1,7 @@
+.git
+.github
+scripts
+**/*.md
+**/.DS_Store
+**/*.bak
+**/*.log

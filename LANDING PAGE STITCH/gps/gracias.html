@@ -2,21 +2,7 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>ALARCOM GPS | Solicitud Recibida</title>
-<!-- Meta Pixel Code -->
-<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '{{META_PIXEL_ID}}');
-    fbq('track', 'PageView');
-    </script>
-<noscript></noscript>
-<!-- End Meta Pixel Code -->
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Space+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -143,6 +129,10 @@
         }
         .animate-check-pop { animation: check-pop 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
     </style>
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="../assets/hardening.css">
+<script defer src="../assets/consent.js"></script>
+<script>document.addEventListener("DOMContentLoaded",()=>{if(sessionStorage.getItem("alarcom_valid_submission")!=="1"){const h=document.querySelector("h1,h2");if(h)h.textContent="Consulta el estado de tu solicitud";const p=h?.nextElementSibling;if(p)p.textContent="Esta página no confirma un envío. Regresa al formulario para solicitar una cotización.";}else{sessionStorage.removeItem("alarcom_valid_submission");}});</script>
 </head>
 <body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container antialiased">
 <!-- TopNavBar -->
